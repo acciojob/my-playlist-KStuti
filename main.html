@@ -5,67 +5,69 @@
     <style>
         body {
             background-color: rgb(204, 204, 204);
-			text-decoration-line:none;
-			text-align:center;
-					}
-.playlist{
-	border:1px solid black;
-	margin:20px;
-}
+            text-align: center;
+        }
+
+        .playlist {
+            border: 1px solid black;
+            margin: 20px;
+        }
+
         h1, h2 {
             text-align: center;
-		 }
+        }
 
         ul {
             list-style-type: none;
         }
 
         li {
-            text-decoration-line: none;
-			
+            text-decoration: none;
         }
-.bothplayer{
-	border:1px solid black;
-}
+
+        .bothplayer {
+            border: 1px solid black;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
         .player_one, .player_two {
-		
             background-color: rgb(255, 255, 255);
-            padding: 1px;
-            border-radius: 1px;
-			justify-items:center;
-			
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
-	
     <h1>My Playlist</h1>
-	<div class="playlist">
-    <ul>
-        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
-        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
-        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
-        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
-        <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
-    </ul>
-	</div>
-<div class="bothplayer">
-    <div class="player_one">
-		<h2>Now Playing...</h2>
-        <video controls>
-            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
-            
-        </video>
+
+    <div class="playlist">
+        <ul>
+            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 1</a></li>
+            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 2</a></li>
+            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 3</a></li>
+            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 4</a></li>
+            <li><a href="https://www.pagalworld.com.se/files/download/id/64630" target="_blank">Song 5</a></li>
+        </ul>
     </div>
 
-    <div class="player_two">
-		 <h2>MP3 songs</h2>
-        <audio controls>
-            <source src="audio.mp3" type="audio/mpeg">
-        </audio>
+    <div class="bothplayer">
+        <div class="player_one">
+            <h2>Now Playing...</h2>
+            <video controls>
+                <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="player_two">
+            <h2>MP3 songs</h2>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </div>
-</div>
 </body>
 
 </html>
